@@ -1,15 +1,24 @@
-switch (prompt('Ingresa tu edad en numeros enteros para saber en qué etapa de tu vida estás.')) {
-    case '1', '2', '3' :
+let age = (prompt('Ingresa tu edad en numeros enteros para saber en qué etapa de tu vida estás.'))
+switch (true) {
+    case (age <= 3):
       alert('¡Eres un Toddler!');
-    case '4', '5':
+    break;
+    case (4 >= age < 5):
       alert('¡Eres un Preschool!');
-    case '6', '7', '8', '9', '10', '11':
+    break;
+    case (5 >= age < 11):
       alert('¡Eres un Gradeschooler!');
-    case '12', '13', '14', '15', '16', '17':
+    break;
+    case (11 >= age < 17):
       alert('¡Eres un Teen!');
-    case '18', '19', '20', '21':
+    break;
+    case (17 >= age < 21):
       alert('¡Eres un Young Adult!');
-    default:
+    break;
+    case  (age >= 21):
       alert('¡Eres todo un adulto!');
+    break;
+    default:
+      alert('¡ERROR! Ingresa una edad válida (en numeros enteros)');
       break;
   }
